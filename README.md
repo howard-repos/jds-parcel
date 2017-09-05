@@ -1,2 +1,2 @@
 # jds-parcel
-JiaHongchao's distribution of spark
+Jia Hongchao's distribution of spark
