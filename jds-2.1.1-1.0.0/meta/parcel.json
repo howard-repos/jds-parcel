@@ -1,82 +1,34 @@
 {
   "schema_version": 1,
-  "name": "jdt",
-  "version": "1.0.7",
+  "name": "jds",
+  "version": "2.1.1-1.0.0",
   "setActiveSymlink": true,
   "depends": "CDH",
   "replaces": "",
   "conflicts": "",
   "provides": [
-    "storm",
-    "kafka-manager",
-    "mongodb",
-    "jdt-kafka"
+    "jdt-spark"
   ],
   "scripts": {
-    "defines": "jdt.sh"
+    "defines": "jds.sh"
   },
   "packages": [
     {
-      "name": "storm",
-      "version": "0.9.4"
-    },
-    {
-      "name": "mongodb",
-      "version": "3.0.15"
-    },
-    {
-      "name": "kafka-manager",
-      "version": "1.2.7"
-    },
-    {
-      "name": "kafka_2.11",
-      "version": "0.8.2.1"
+      "name": "spark",
+      "version": "2.1.1"
     }
   ],
   "components": [
     {
-      "name": "storm",
-      "version": "0.9.4",
-      "pkg_version": "0.9.4"
-    },
-    {
-      "name": "mongodb",
-      "version": "3.0.15",
-      "pkg_version": "3.0.15"
-    },
-    {
-      "name": "kafka-manager",
-      "version": "1.2.7",
-      "pkg_version": "1.2.7"
-    },
-    {
-      "name": "kafka_2.11",
-      "version": "0.8.2.1",
-      "pkg_version": "0.8.2.1"
+      "name": "spark",
+      "version": "2.1.1",
+      "pkg_version": "2.1.1"
     }
   ],
   "users": {
-    "storm": {
-      "longname": "Apache Storm",
-      "home": "/var/lib/storm",
-      "shell": "/bin/bash",
-      "extra_groups": []
-    },
-    "mongodb": {
-      "longname": "mongodb",
-      "home": "/var/lib/mongodb",
-      "shell": "/bin/bash",
-      "extra_groups": []
-    },
-    "kafka-manager": {
-      "longname": "kafka-manager",
-      "home": "/var/lib/kafka-manager",
-      "shell": "/bin/bash",
-      "extra_groups": []
-    },
-    "kafka": {
-      "longname": "kafka",
-      "home": "/var/lib/kafka",
+    "jdt-spark": {
+      "longname": "jdt-spark",
+      "home": "/var/lib/spark",
       "shell": "/bin/bash",
       "extra_groups": []
     }
